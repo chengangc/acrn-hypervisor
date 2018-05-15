@@ -30,10 +30,9 @@ tools:
 	make OUT_DIR=$(TOOLS_OUT);
 	cd $(T)/tools/acrntrace; \
 	make OUT_DIR=$(TOOLS_OUT);
+	cd $(T)/tools/acrn-crashlog; \
+	make OUT_DIR=$(TOOLS_OUT);
 
 .PHONY: clean
 clean:
 	rm -rf $(ROOT_OUT)
-	
-
-
