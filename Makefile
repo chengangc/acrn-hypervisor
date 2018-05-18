@@ -25,6 +25,7 @@ tools:
 	make -C $(T)/tools/acrnlog OUT_DIR=$(TOOLS_OUT)
 	make -C $(T)/tools/acrn-manager OUT_DIR=$(TOOLS_OUT)
 	make -C $(T)/tools/acrntrace OUT_DIR=$(TOOLS_OUT)
+	make -C $(T)/tools/acrn-crashlog OUT_DIR=$(TOOLS_OUT)
 
 .PHONY: clean
 clean:
@@ -43,4 +44,5 @@ tools-install:
 	make -C $(T)/tools/acrnlog OUT_DIR=$(TOOLS_OUT) install
 	make -C $(T)/tools/acrn-manager OUT_DIR=$(TOOLS_OUT) install
 	make -C $(T)/tools/acrntrace OUT_DIR=$(TOOLS_OUT) install
+	make -C $(T)/tools/acrn-crashlog OUT_DIR=$(TOOLS_OUT) install
 
